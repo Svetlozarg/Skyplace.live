@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+}
+main {
+  background-image: url('https://wallpaperaccess.com/full/148421.jpg');
+  transition: 0.4s;
+  min-height: 100vh;
+  padding: 20px 0;
+  padding-top: 8%;
+  text-align: center;
+}
+.icon img {
+  width: 120px;
+}
+.search-box {
+  width: 40vw;
+  margin-bottom: 30px;
+  margin: 0.5% auto;
+}
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #313131;
+  font-size: 20px;
+  appearance: none;
+  border:none;
+  outline: none;
+  background: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+  text-align: center;
+}
+.search-box .search-bar:focus {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px 0px 16px 0px;
+}
+.location-box {
+  padding: 20px 0;
+  width: 20vw;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid grey;
+}
+.location-box .location {
+  color: rgb(255, 255, 255);
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+}
+.span {
+  text-shadow: -1px 0 rgb(31, 70, 80), 0 0.5px rgb(31, 70, 80), 0.5px 0 rgb(31, 70, 80), 0 -0.5px rgb(31, 70, 80);
+  color: rgb(146, 226, 246);
+}
+.location-box .date {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+.weather-box {
+  text-align: justify;
+  margin: 2% auto;
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  justify-content: center;
+}
+.weather-box .temp {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color:rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  margin: 30px 0px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+.weather, .desc, .wind, .sun, .coord, .humidity, .clouds, .visibility,
+.feels, .pressure, .precipitation {
+  color: #FFF;
+  font-size: 18px;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 20px 0;
+}
+.icon-Text {
+  width: 40px;
+  margin: 0 5px;
+}
+.br-media {
+  display: block;
+}
+.br {
+  display: none;
+}
+.alert {
+  background-color: rgb(241, 213, 213);
+  opacity: 0.7;
+  margin: 2% auto;
+  text-align: center;
+  width: 30vw;
+  border-radius: 5px;
+}
+.forecast-title {
+  font-size: 32px;
+  color: white;
+  margin-top: 10%;
+}
+.forecast-wrapper {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin-top: 5%;
+}
+.day-item {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(87, 86, 86, 0.5);
+  width: 15vw;
+  min-height: 50vh;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.6s;
+  margin: 0 20px;
+}
+.day-item:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgb(76, 112, 121);
+}
+.day-item .image {
+  max-width: 8vw;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.day-item h2 {
+  color: rgb(116, 219, 245);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 16px;
+  padding: 12px 0;
+}
+.day-item .desc {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 30px 0;
+  font-size: 16px;
+}
+.day-item p {
+  font-size: 18px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 8px 0;
+}
+.span-max {
+  color: rgb(246, 146, 146);
+}
+.span-min {
+  color: rgb(160, 212, 236);
+}
+.temp {
+  max-height: 5vh;
+  border: none;
+}
+@media only screen and (max-width: 600px) {
+  .search-box {
+    width: 90vw;
+    margin: 5rem auto 1rem auto;
+  }
+  .icon-Text{
+    width: 20px;
+    margin: 0 5px;
+  }
+  .location-box {
+    width: 90vw;
+  }
+  .weather, .desc, .wind, .sun, .coord, .humidity, .clouds, .visibility,
+  .feels, .pressure, .precipitation {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  main {
+    background-position: left;
+  }
+  .br {
+    display: block;
+  }
+  .span {
+  text-shadow: -1px 0 rgb(31, 70, 80), 0 0.5px rgb(31, 70, 80), 0.5px 0 rgb(31, 70, 80), 0 -0.5px rgb(31, 70, 80);
+  color: rgb(146, 226, 246);
+  }
+  .forecast-title {
+    font-size: 32px;
+    color: white;
+    margin-top: 15%;
+    letter-spacing: 5px;
+  }
+  .day-item {
+    width: 50vw;
+    height: 60vh;
+    padding: 0px 20px;
+    cursor: pointer;
+    margin: 20px 10px;
+  }
+  .day-item:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    background-color: rgba(87, 86, 86, 0.5);
+  }
+  .day-item .image {
+    max-width: 30vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    margin: 5px 0;
+  }
+  .day-item h2 {
+    color: rgb(116, 219, 245);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 13px;
+    padding: 12px 0;
+  }
+  .day-item .desc {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  .day-item p {
+    font-size: 18px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 8px 0;
+  }
+
+  .span-max {
+    color: rgb(246, 146, 146);
+  }
+  .temp {
+    max-height: 5vh;
+    border: none;
+  }
+}
