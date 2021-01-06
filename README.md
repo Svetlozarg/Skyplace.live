@@ -1,4 +1,12 @@
-# weather-finall
+skyplace.live
+
+A vue.js weather web app. Full integration for daily use.
+Features:
+  Current weather
+  Hourly weather
+  7 day weather forecast
+Other features:
+  Fortune quotes
 
 ## Project setup
 ```
