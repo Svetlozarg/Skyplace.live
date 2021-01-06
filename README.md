@@ -1,3 +1,5 @@
+Skyplace.live
+
 A vue.js weather web app. Full integration for daily use.
 Features:
   Current weather
