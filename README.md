@@ -1,9 +1,12 @@
-Skyplace.live
+Skyplace --> Weather Web App
 
-A vue.js weather web app. Full integration for daily use.
+<a href="skyplace.live">Link to Skyplace.live</a>
+
+A Vue.js weather web app. Full integration for daily use.
 Features:
   Current weather
   Hourly weather
+  Map with different weather layers
   7 day weather forecast
 Other features:
   Fortune quotes
