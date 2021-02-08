@@ -1,6 +1,6 @@
 Skyplace --> Weather Web App
 
-<a href="skyplace.live">Link to Skyplace.live</a>
+<a href="https://skyplace.live" target="_blank">Link to Skyplace.live</a>
 
 A Vue.js weather web app. Full integration for daily use.
 Features:
